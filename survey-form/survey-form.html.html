@@ -1,0 +1,134 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Full Name: <input type="text" id="name" placeholder="Full Name" required /></label>
+        <label id="email-label">E-mail: <input type="email" id="email" placeholder="E-mail" required /></label>
+        <label id="number-label">Age: <input type="number" id="number" min="13" max="120" placeholder="Your Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favourite activity?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Playing Sports</option>
+            <option value="2">Reading</option>
+            <option value="3">Programming</option>
+            <option value="4">Playing Games</option>
+          </select>
+        </label>
+        <label>Which Activity would you love to learn?</label>
+        <label><input type="radio" name="activity" value="programming" class="in-line" required>Programming</label>
+        <label><input type="radio" name="activity" value="cricket" class="in-line" required>Cricket</label>
+        <label><input type="radio" name="activity" value="football" class="in-line" required>Football</label>
+        <label><input type="radio" name="activity" value="other-s" class="in-line" required>Other Sports</label>
+        <label><input type="radio" name="activity" value="dota" class="in-line" required>DOTA</label>
+        <label><input type="radio" name="activity" value="other-g" class="in-line" required>Other Games</label>
+      </fieldset>
+      <fieldset>
+        <label>Which activity do you feel is relaxing? (Check any that apply)</label>
+        <label><input type="checkbox" name="tea" value="tea" class="inline" />Drinking Tea</label>
+        <label><input type="checkbox" name="chess" value="chess" class="inline" />Playing Chess</label>
+        <label><input type="checkbox" name="bird" value="bird" class="inline" />Bird Watching</label>
+        <label><input type="checkbox" name="beach" value="beach" class="inline" />Relaxing on a Beach</label>
+        <label><input type="checkbox" name="reading" value="reading" class="inline" />Reading a Book</label>
+      </fieldset>
+      <fieldset>
+        <label>Additional Comments:
+          <textarea name="comments" rows="3" cols="30" placeholder="I also like to do.."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+	color: #f5f6f7;
+  font-family: Tahoma;
+	font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+	margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+	width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+
+** end of undefined **
+
